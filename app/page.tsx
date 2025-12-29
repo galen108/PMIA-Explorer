@@ -4,12 +4,13 @@ import React, { useState } from 'react';
 import { ChevronDown, AlertCircle, Brain, Heart, Activity, Info } from 'lucide-react';
 
 export default function PMIAExplorer() {
-  const [activeSection, setActiveSection] = useState(null);
-  const [hoveredCondition, setHoveredCondition] = useState(null);
+    const [activeSection, setActiveSection] = useState<string | null>(null);
+    const [hoveredCondition, setHoveredCondition] = useState<string | null>(null);
 
-  const toggleSection = (section) => {
-    setActiveSection(activeSection === section ? null : section);
-  };
+
+const toggleSection = (section: string | null) => {
+  setActiveSection(activeSection === section ? null : section);
+};
 
   const metabolicConditions = [
     { name: "Metabolic Syndrome & Obesity", icon: "⚖️", color: "#ff6b6b" },
