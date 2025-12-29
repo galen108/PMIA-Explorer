@@ -1,4 +1,4 @@
 [build]
-base = "pmia-explorer"
-publish = "pmia-explorer/.next"
+base = "PMIA-Explorer"
+publish = "PMIA-Explorer/.next"
 command = "npm run build"
