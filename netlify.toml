@@ -1,3 +1,4 @@
 [build]
-command = "next build"
-publish = ".next"
+base = "client"
+command = "npm run build"
+publish = "client/.net"
